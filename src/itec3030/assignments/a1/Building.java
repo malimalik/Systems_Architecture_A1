@@ -1,14 +1,10 @@
-/*
- *  Template Developed by Sotirios Liaskos for the needs of
- *   ITEC3030 Systems Architecture.
- *  @ All Rights Reserved
- */
 package itec3030.assignments.a1;
 
 import itec3030.smarthome.standards.NumericMeasurementInstrument;
 import itec3030.smarthome.standards.OnOffAble;
 import itec3030.smarthome.standards.SmartThing;
 import java.util.ArrayList;
+
 
 /**
  * A Room object for maintaining information about the entire building.
@@ -29,7 +25,7 @@ public class Building {
      */
     public int getDesiredTemperature() {
         // a method for thermostat which returns an integer.
-        return thermostat._________________();
+        return thermostat.getReading();
     }
 
     /**
@@ -51,7 +47,7 @@ public class Building {
 
      // the type for the furnace
     public void setFurnace(_________________ frn) {
-        this.furnace = frn;
+        furnace = frn;
     }
 
     /**
