@@ -1,5 +1,5 @@
 package itec3030.assignments.a1;
-
+import itec3030.smarthome.standards.Furnace;
 import itec3030.smarthome.standards.NumericMeasurementInstrument;
 import itec3030.smarthome.standards.OnOffAble;
 import itec3030.smarthome.standards.SmartThing;
@@ -15,7 +15,7 @@ public class Building {
     private ArrayList<Room> rooms = new ArrayList<Room>();
 
     // figure out the type for the furnace - it is a type of actuator.
-    private _________________ furnace = null;
+    private Furnace furnace = null;
     private NumericMeasurementInstrument thermostat = null;
 
     /**
@@ -35,7 +35,7 @@ public class Building {
      */
 
      // the type for furnace - actuator. 
-    public _________________ getFurnace() {
+    public Furnace getFurnace() {
         return furnace;
     }
 
@@ -46,7 +46,7 @@ public class Building {
      */
 
      // the type for the furnace
-    public void setFurnace(_________________ frn) {
+    public void setFurnace(Furnace frn) {
         furnace = frn;
     }
 
@@ -90,10 +90,10 @@ public class Building {
      */
         // type of controller? The smart thing is a type of controller?
     
-    public Room findRoomOf( s) {
+    public Room findRoomOf( SmartThing s) {
         Room found = null;
         for (Room r : rooms) {
-            if (r.hasThing((_________________) s))
+            if (r.hasThing((SmartThing) s))
                 found = r;
         }
         return (found);
