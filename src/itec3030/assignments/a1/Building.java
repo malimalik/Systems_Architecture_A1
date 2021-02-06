@@ -16,7 +16,7 @@ public class Building {
     private ArrayList<Room> rooms = new ArrayList<Room>();
 
     // figure out the type for the furnace - it is a type of actuator.
-    private Furnace furnace = null;
+    private OnOffAble furnace = null;
     private NumericMeasurementInstrument thermostat = null;
 
     /**
@@ -36,7 +36,7 @@ public class Building {
      */
 
      // the type for furnace - actuator. 
-    public Furnace getFurnace() {
+    public OnOffAble getFurnace() {
         return furnace;
     }
 
@@ -47,7 +47,7 @@ public class Building {
      */
 
      // the type for the furnace
-    public void setFurnace(Furnace frn) {
+    public void setFurnace(OnOffAble frn) {
         furnace = frn;
     }
 

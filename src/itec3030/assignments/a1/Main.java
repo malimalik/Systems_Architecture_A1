@@ -10,7 +10,7 @@ import itec3030.smarthome.standards.NumericMeasurementInstrument;
 import itec3030.smarthome.standards.TemperatureSensor;
 
 import itec3030.assignments.a1.sensors.omnitemp.OmniTempSensorXS3;
-import itec3030.assignments.a1.sensors.thermoset.ThermoSetX19.ThermosetX19;
+//import itec3030.assignments.a1.sensors.thermoset.ThermoSetX19.ThermosetX19;
 import itec3030.assignments.a1.actuators.saharah.SaharaFurnaceHL42;
 /**
  *
@@ -59,11 +59,11 @@ public class Main {
         e.play();
         
         
-        // Part 3 - uncomment to execute
-        th = new ThermosetX19();
-        h.setThermostat(th);
-        e = new Scenario(o1,o2,o3,o4);
-        e.play();
+//        // Part 3 - uncomment to execute
+//        th = new ThermosetX19();
+//        h.setThermostat(th);
+//        e = new Scenario(o1,o2,o3,o4);
+//        e.play();
         
     }
 }

@@ -67,7 +67,7 @@ public class Room {
             sum += s.getReading();
             count++;
         }
-        return(float) (sum/count);
+        return (sum/count);
     }
     
     /**
@@ -77,7 +77,7 @@ public class Room {
      */
 
    
-    public boolean hasThing(TemperatureSensor s) {
+    public boolean hasThing(SmartThing s) {
         boolean found = false;
         for (TemperatureSensor t :  tempSensors) {
             if (t.equals(s)) found = true;
