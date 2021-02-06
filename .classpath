@@ -6,5 +6,6 @@
 	<classpathentry kind="lib" path="lib/ClassLibrary-TempSensor.jar"/>
 	<classpathentry kind="lib" path="lib/Standards.jar"/>
 	<classpathentry kind="lib" path="lib/ThermostatFrontEnd.jar"/>
+	<classpathentry kind="lib" path="lib/Scenario.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

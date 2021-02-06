@@ -89,7 +89,8 @@ public class Building {
      * @return Reference to the Room in which the SmartThing is installed.
      */
         // type of controller? The smart thing is a type of controller?
-    public Room findRoomOf(_________________ s) {
+    
+    public Room findRoomOf( s) {
         Room found = null;
         for (Room r : rooms) {
             if (r.hasThing((_________________) s))
