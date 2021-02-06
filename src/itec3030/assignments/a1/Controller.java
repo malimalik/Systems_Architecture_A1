@@ -6,7 +6,8 @@
 package itec3030.assignments.a1;
 
 import itec3030.smarthome.standards.ControllerInterface;
-import itec3030.smarthome.standards._________________;
+import itec3030.smarthome.standards.SmartThing;
+import itec3030.smarthome.standards.OnOffAble;
 
 
 /**
@@ -34,27 +35,27 @@ public class Controller implements ControllerInterface {
     public void update() {
     
     // See if you need to turn on the furnace
-        if (house.getAvergeTemperature() < house.getDesiredTemperature() && !_________________().isOn()) {
+        if (house.getAvergeTemperature() < house.getDesiredTemperature() && !house.getFurnace().isOn()) {
             System.out.println("Average House Temperature is now: " + house.getAvergeTemperature() + ". Turning heating on.");
             turnHeatingOn();
         }
         // See if you need to turn on the furnace
-        if (house.getAvergeTemperature() >= house.getDesiredTemperature() && _________________().isOn()) {
+        if (house.getAvergeTemperature() >= house.getDesiredTemperature() && house.getFurnace().isOn()) {
             System.out.println("Average House Temperature is now: " + house.getAvergeTemperature() + ". Turning heating off.");
             turnHeatingOff();
         }
     }
 
     private void turnHeatingOff(){
-        _________________;
+        house.getFurnace().turnOff();
     }
 
     private void turnHeatingOn(){
-    	_________________;
+    	house.getFurnace().turnOn();;
     }
 
     @Override
-    public void changeDetected(_________________ s) {
+    public void changeDetected(SmartThing s) {
         this.update();
     }
 }
