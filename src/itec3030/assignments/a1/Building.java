@@ -3,6 +3,7 @@ import itec3030.smarthome.standards.Furnace;
 import itec3030.smarthome.standards.NumericMeasurementInstrument;
 import itec3030.smarthome.standards.OnOffAble;
 import itec3030.smarthome.standards.SmartThing;
+import itec3030.smarthome.standards.TemperatureSensor;
 import java.util.ArrayList;
 
 
@@ -93,7 +94,8 @@ public class Building {
     public Room findRoomOf( SmartThing s) {
         Room found = null;
         for (Room r : rooms) {
-            if (r.hasThing((SmartThing) s))
+        	
+            if (r.hasThing((TemperatureSensor) s)) 
                 found = r;
         }
         return (found);
